@@ -1,0 +1,39 @@
+<div
+  class="w-20 h-screen flex flex-col justify-between border-r-[1px] border-regal-gray ml-[0.25px]"
+>
+  <div class="flex flex-col w-20 h-1/2 gap-6 pt-8">
+    <div class="h-[28.65px] w-full pr-5 pl-6">
+      <img src="/assets/imgs/logo.svg" alt="logo" />
+    </div>
+
+    <div class="h-96 px-4 gap-2 text-sm">
+      <div *ngFor="let data of navData" class="h-12 w-12 p-3 gap-2">
+        <img
+          [routerLink]="data.routeLink"
+          class="cursor-pointer"
+          [src]="data.icon"
+          [alt]="data.label"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="h-36 w-full pb-6 px-4 gap-6 text-sm">
+    <div class="h-14 w-12 p-3 gap-2">
+      <img
+        routerLink="/settings"
+        class="cursor-pointer"
+        src="/assets/imgs/Icon-7.svg"
+        alt="Settings"
+      />
+    </div>
+    <div class="h-14 w-12 p-0 gap-2">
+      <img
+        routerLink="/#"
+        class="cursor-pointer"
+        src="/assets/imgs/Ellipse 1.svg"
+        alt="Profile"
+      />
+    </div>
+  </div>
+</div>
