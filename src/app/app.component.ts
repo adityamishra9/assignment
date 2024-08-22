@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import{MatIconModule} from '@angular/material/icon';
-import { HttpClientJsonpModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
+import { RsidenavComponent } from './rsidenav/rsidenav.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SidenavComponent],
+  imports: [RouterOutlet, SidenavComponent, HeaderComponent, RsidenavComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

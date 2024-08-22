@@ -1,0 +1,57 @@
+<div class="fixed right-0 top-[57px] w-[315px] h-full flex flex-row">
+  <div
+    *ngIf="collapsed"
+    class="z-20 w-60 h-20 border-x-[1px] border-regal-gray flex flex-col items-center"
+  >
+    <div class="w-56 flex flex-col justify-between">
+      <div class="relative top-0 flex justify-between">
+        <p class="text-xs top-2 relative">Settings</p>
+        <img
+          src="/assets/imgs/x-circle.svg"
+          alt="cross"
+          (click)="collapse()"
+          class="top-2 relative"
+        />
+      </div>
+      <div
+        class="relative flex justify-between top-12 border-b-[1px] border-regal-gray"
+      >
+        <p class="text-xs hover:ring-rSideExpand px-5 hover:underline-offset-1">Chart Type</p>
+        <p class="text-xs hover:ring-rSideExpand px-5">Chart Settings</p>
+      </div>
+    </div>
+
+    <div class="w-52 h-[360px] relative top-16 gap-1 flex flex-wrap">
+      <div
+        class="w-16 h-16 flex flex-col justify-center items-center hover:bg-hover-blue"
+        *ngFor="let data of expandData"
+      >
+        <div class="px-4 pt-2">
+          <img [src]="data.icon" [alt]="data.label" />
+        </div>
+        <p class="px-1 pb-1 text-xs text-customGray font-semibold text-center">
+          {{ data.label }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-20 right-0 fixed w-20 h-screen flex flex-col">
+    <div
+      class="top-[70px] gap-4 flex justify-center flex-col items-center px-10 text-sm"
+    >
+      <div
+        *ngFor="let data of navData"
+        class="h-8 w-8 p-2 gap-[5.33px] rounded-[4px] bg-right-back hover:bg-hoverRight-back"
+        (click)="collapse()"
+      >
+        <img
+          [routerLink]="data.routeLink"
+          class="cursor-pointer"
+          [src]="data.icon"
+          [alt]="data.label"
+        />
+      </div>
+    </div>
+  </div>
+</div>
