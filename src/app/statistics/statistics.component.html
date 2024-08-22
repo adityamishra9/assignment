@@ -1,1 +1,21 @@
-<p>statistics works!</p>
+<div class="flex h-full">
+  <div class="w-52 border border-regal-gray flex flex-col items-center">
+    <div class="px-1 h-14 flex justify-center items-center">
+      <div
+        class="w-48 border border-regal-gray rounded-md flex justify-between items-center px-2"
+      >
+        <p>ANNEXUS 61D</p>
+        <img src="/assets/imgs/arr.png" alt="downArrow" />
+      </div>
+    </div>
+    <app-card title="Measures" [values]="values1" />
+    <app-card title="Attributes" [values]="values2" />
+  </div>
+
+  <div>
+    <p class="font-[550] text-sm p-4">Monthly sales report</p>
+    <div class="w-full h-full flex justify-center items-center">
+      <app-charts />
+    </div>
+  </div>
+</div>

@@ -13,7 +13,7 @@ import { expandNavbarData, navbarData } from './nav-data';
 export class RsidenavComponent {
   navData = navbarData;
   expandData=expandNavbarData;
-  collapsed = false;
+  collapsed = true;
 
   collapse(){
     this.collapsed = !this.collapsed;

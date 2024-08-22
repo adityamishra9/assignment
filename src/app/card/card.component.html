@@ -1,0 +1,9 @@
+<div class="w-52 h-fit flex flex-col ">
+    <div class="h-8 pt-3 flex justify-start border">
+        <img src="/assets/imgs/arr.png" alt="downArrow" class="px-2" (click)="collapse()">
+        <p class="text-sm">{{title}}</p>
+    </div>
+    <div class="py-3 gap-3 text-sm flex flex-col" *ngIf="collapsed">
+        <div class="mx-5 flex text-xs gap-1" *ngFor="let data of values"><input type="checkbox"> {{data}}</div>
+    </div>
+</div>
