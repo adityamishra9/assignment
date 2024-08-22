@@ -4,22 +4,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Features
 ![image](https://github.com/user-attachments/assets/3339e174-14b8-4a0f-90a9-ee8b2952800d)
+
 Toggle the Arrow Icon to list drop down
 
 ![image](https://github.com/user-attachments/assets/ff4dcb9e-006a-4fbd-8e37-efe2f77648cd)
+
 All the sidebar icons have routeLinks associated with them
 The icon here is white in color that makes it camoflague with the background color, hover at it to see it
 
 ![image](https://github.com/user-attachments/assets/58deda0e-4a7f-4228-a023-172da192d1fb)
+
 Click on any icon to expand the right sidebar
 Close the expansion by toggling any icon or with the cross button at the top-right of the expanded sidebar
 
 ![image](https://github.com/user-attachments/assets/9534970f-7399-472e-8b65-873d52e884ca)
+
 Here's the overall view of the page
 
-![image](https://github.com/user-attachments/assets/bc385221-2497-4a0a-9f4f-c069d9bbf42e)
+[Screencast from 2024-08-22 22-48-50.webm](https://github.com/user-attachments/assets/27f5e87f-130d-4b41-b87f-f84b3d8814ba)
 
 ## Development server
+
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
