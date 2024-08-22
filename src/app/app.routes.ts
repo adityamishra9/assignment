@@ -4,9 +4,9 @@ import { CardComponent } from './card/card.component';
 import { CoupensComponent } from './coupens/coupens.component';
 import { HomeComponent } from './home/home.component';
 import { IdeasComponent } from './ideas/ideas.component';
-import { ProductsComponent } from './products/products.component';
 import { RecordsComponent } from './records/records.component';
 import { StatisticsComponent } from './statistics/statistics.component';
+import { ProductsComponent } from './products/products.component';
 
 export const routes: Routes = [
   {
@@ -26,12 +26,12 @@ export const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'ideas',
-    component: IdeasComponent,
-  },
-  {
     path: 'products',
     component: ProductsComponent,
+  },
+  {
+    path: 'ideas',
+    component: IdeasComponent,
   },
   {
     path: 'records',
