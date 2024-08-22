@@ -23,6 +23,12 @@ Here's the overall view of the page
 
 [Screencast from 2024-08-22 22-48-50.webm](https://github.com/user-attachments/assets/27f5e87f-130d-4b41-b87f-f84b3d8814ba)
 
+##Currently Working On
+
+Responsiveness
+Charts
+Cleaner codebase
+
 ## Development server
 
 
