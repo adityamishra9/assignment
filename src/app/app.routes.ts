@@ -7,6 +7,7 @@ import { IdeasComponent } from './ideas/ideas.component';
 import { RecordsComponent } from './records/records.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { ProductsComponent } from './products/products.component';
+import { MediaComponent } from './media/media.component';
 
 export const routes: Routes = [
   {
@@ -36,6 +37,10 @@ export const routes: Routes = [
   {
     path: 'records',
     component: RecordsComponent,
+  },
+  {
+    path: 'media',
+    component: MediaComponent,
   },
   {
     path: 'statistics',

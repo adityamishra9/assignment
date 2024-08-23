@@ -1,11 +1,10 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './header/header.component';
 import { RsidenavComponent } from './rsidenav/rsidenav.component';
 import { ChartsComponent } from "./charts/charts.component";
 import { StatisticsComponent } from "./statistics/statistics.component";
-import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
 import { CardComponent } from "./card/card.component";
 
 export class AppModule {}

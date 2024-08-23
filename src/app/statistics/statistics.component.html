@@ -1,21 +1,32 @@
-<div class="flex h-full">
-  <div class="w-52 border border-regal-gray flex flex-col items-center">
-    <div class="px-1 h-14 flex justify-center items-center">
-      <div
-        class="w-48 border border-regal-gray rounded-md flex justify-between items-center px-2"
-      >
-        <p>ANNEXUS 61D</p>
-        <img src="/assets/imgs/arr.png" alt="downArrow" />
+<div class="flex h-full w-full">
+  <div
+    class="w-40 lg:w-52 border border-regal-gray flex flex-col justify-between"
+    *ngIf="close"
+  >
+    <div class="flex flex-col">
+      <div class="px-1 h-14 flex justify-center items-center">
+        <div
+          class="border border-regal-gray rounded-md flex justify-between items-center px-2"
+        >
+          <p>ANNEXUS 61D</p>
+          <img src="/assets/imgs/arr.png" alt="downArrow" class="m-[1px]" />
+        </div>
+      </div>
+      <app-card title="Measures" [values]="values1" />
+      <app-card title="Attributes" [values]="values2" />
+    </div>
+
+    <div class="flex justify-center items-center pb-20 gap-1">
+      <img src="/assets/imgs/Button.svg" alt="close" (click)="closeFilters()" />
+      <div class="bg-runReportButton p-[7px] rounded-md">
+        <p class="font-semibold text-white text-sm">Run report</p>
       </div>
     </div>
-    <app-card title="Measures" [values]="values1" />
-    <app-card title="Attributes" [values]="values2" />
+
   </div>
 
-  <div>
+  <div class="flex flex-col">
     <p class="font-[550] text-sm p-4">Monthly sales report</p>
-    <div class="w-full h-full flex justify-center items-center">
       <app-charts />
-    </div>
   </div>
 </div>

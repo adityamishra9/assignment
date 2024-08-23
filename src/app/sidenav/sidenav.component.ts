@@ -12,13 +12,13 @@ import { CommonModule } from '@angular/common';
 })
 export class SidenavComponent {
   collapsed = true;
-  navData = navbarData; 
+  navData = navbarData;
 
-  toggleCollapse():void{
-  this.collapsed=!this.collapsed;
+  toggleCollapse(): void {
+    this.collapsed = !this.collapsed;
   }
 
-  closeSidenav():void{
-    this.collapsed=false;
+  closeSidenav(): void {
+    this.collapsed = false;
   }
 }

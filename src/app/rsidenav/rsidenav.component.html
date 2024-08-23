@@ -1,29 +1,25 @@
 <div
-  class="relative h-full flex flex-row border-[1px] border-regal-gray top-[55px]"
-  [class]="collapsed ? 'w-[315px]' : ''"
+  class="fixed z-20 h-full flex flex-row border-[1px] border-regal-gray right-0 top-[55px] bg-white"
 >
-  <div *ngIf="collapsed" class="w-60 h-full gap-4 flex flex-col items-center pt-2">
+  <div
+    *ngIf="collapsed"
+    class="w-60  h-full gap-4 flex flex-col items-center pt-2 border-x border-regal-gray"
+  >
     <div class="w-56 h-16 flex flex-col justify-between">
-      <div class=" px-2 flex justify-between">
+      <div class="px-2 flex justify-between"> 
         <p class="text-xs">Settings</p>
-        <img
-          src="/assets/imgs/x-circle.svg"
-          alt="cross"
-          (click)="collapse()"
-        />
+        <img src="/assets/imgs/x-circle.svg" alt="cross" (click)="collapse()" />
       </div>
 
       <div
         class="relative flex justify-between border-b-[1px] border-regal-gray cursor-pointer"
       >
-        <p class="text-xs hover:ring-rSideExpand px-5">
-          Chart Type
-        </p>
-        <p class="text-xs hover:ring-rSideExpand px-5">Chart Settings</p>
+        <p class="text-xs">Chart Type</p>
+        <p class="text-xs">Chart Settings</p>
       </div>
     </div>
 
-    <div class="h-fit w-full gap-1 justify-center items-center flex flex-wrap">
+    <div class="w-full gap-1 justify-center items-center flex flex-wrap">
       <div
         class="w-16 h-16 flex flex-col justify-center items-center hover:bg-hover-blue"
         *ngFor="let data of expandData"
@@ -38,24 +34,17 @@
     </div>
   </div>
 
-  <div
-    class=" w-20 h-full flex flex-col border-x-[1px] border-regal-gray"
-    [class]="collapsed ? '' : 'border-x-[1px] border-regal-gray'"
-  >
+  <div class="w-10 lg:w-20 h-full flex flex-col">
     <div
-      class="pt-7 gap-4 flex justify-center flex-col items-center px-10 text-sm"
+      class="pt-7 gap-4 flex flex-col justify-center items-center lg:px-10 text-sm"
     >
       <div
         *ngFor="let data of navData"
-        class="h-8 w-8 p-2 gap-[5.33px] rounded-[4px] bg-right-back hover:bg-hoverRight-back"
+        class="h-8 lg:h-10 w-8 lg:w-10 flex justify-center items-center rounded-[4px] bg-right-back hover:bg-hoverRight-back"
+        [routerLink]="data.routeLink"
         (click)="collapse()"
       >
-        <img
-          [routerLink]="data.routeLink"
-          class="cursor-pointer"
-          [src]="data.icon"
-          [alt]="data.label"
-        />
+        <img class="cursor-pointer" [src]="data.icon" [alt]="data.label" />
       </div>
     </div>
   </div>

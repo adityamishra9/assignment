@@ -11,11 +11,16 @@ import { expandNavbarData, navbarData } from './nav-data';
   styleUrl: './rsidenav.component.css',
 })
 export class RsidenavComponent {
+  
   navData = navbarData;
-  expandData=expandNavbarData;
+  expandData = expandNavbarData;
   collapsed = true;
+  // click=false;
 
-  collapse(){
+  collapse() {
     this.collapsed = !this.collapsed;
   }
+  // isClicked() {
+  //   this.click = !this.click;
+  // }
 }

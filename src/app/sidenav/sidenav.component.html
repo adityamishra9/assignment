@@ -1,15 +1,15 @@
 <div
-  class="z-10 top-0 w-20 h-full flex flex-col justify-between border-r-[1px] border-regal-gray ml-[0.25px]"
+  class="z-10 w-12 lg:w-20 h-full flex flex-col justify-between border-r-[1px] border-regal-gray ml-[0.25px]"
 >
-  <div class="flex flex-col w-20 h-1/2 gap-6 pt-8">
-    <div class="h-[28.65px] w-full pr-5 pl-6">
+  <div class="flex flex-col justify-center h-fit gap-4 lg:gap-6 pt-4 lg:pt-8">
+    <div class="h-full w-full px-1 lg:px-2 flex justify-center items-center">
       <img src="/assets/imgs/logo.svg" alt="logo" />
     </div>
 
-    <div class="h-96 px-4 gap-2 text-sm">
+    <div class="h-fit lg:px-4 gap-2 text-sm">
       <div
         *ngFor="let data of navData"
-        class="h-12 w-12 p-3 gap-2 hover:bg-hover-blue rounded-[8px]"
+        class="lg:h-12 lg:w-12 p-2 lg:p-3 justify-center hover:bg-hover-blue rounded-[8px]"
       >
         <img
           [routerLink]="data.routeLink"
@@ -21,8 +21,10 @@
     </div>
   </div>
 
-  <div class="h-36 w-full pb-6 px-4 gap-6 text-sm">
-    <div class="h-14 w-12 p-3 gap-2 rounded-[8px]">
+  <div
+    class="pb-6 lg:px-4 lg:gap-6 text-sm flex flex-col justify-center items-center"
+  >
+    <div class="p-2 gap-2 rounded-[8px]">
       <img
         routerLink="/settings"
         class="cursor-pointer"
@@ -30,7 +32,7 @@
         alt="Settings"
       />
     </div>
-    <div class="h-14 w-12 p-0 gap-2">
+    <div class="p-1 gap-2">
       <img
         routerLink="/#"
         class="cursor-pointer"
