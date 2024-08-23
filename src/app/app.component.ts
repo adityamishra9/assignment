@@ -6,12 +6,13 @@ import { RsidenavComponent } from './rsidenav/rsidenav.component';
 import { ChartsComponent } from "./charts/charts.component";
 import { StatisticsComponent } from "./statistics/statistics.component";
 import { CardComponent } from "./card/card.component";
+import { DonutComponent } from "./graphs/donut/donut.component";
 
 export class AppModule {}
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SidenavComponent, HeaderComponent, RsidenavComponent, ChartsComponent, StatisticsComponent, CardComponent],
+  imports: [RouterOutlet, SidenavComponent, HeaderComponent, RsidenavComponent, ChartsComponent, StatisticsComponent, CardComponent, DonutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

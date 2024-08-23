@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
 import { AgCharts } from 'ag-charts-angular';
 import { AgChartOptions } from 'ag-charts-community';
-import { time } from 'ag-charts-community';
 
 Chart.register(...registerables);
 

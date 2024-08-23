@@ -21,8 +21,9 @@
 
     <div class="w-full gap-1 justify-center items-center flex flex-wrap">
       <div
-        class="w-16 h-16 flex flex-col justify-center items-center hover:bg-hover-blue"
+        class="w-16 h-16 flex flex-col justify-center items-center hover:bg-hover-blue cursor-pointer"
         *ngFor="let data of expandData"
+        [routerLink]="data.routeLink"
       >
         <div class="px-4 pt-2">
           <img [src]="data.icon" [alt]="data.label" />

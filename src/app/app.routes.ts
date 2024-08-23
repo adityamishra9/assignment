@@ -8,6 +8,8 @@ import { RecordsComponent } from './records/records.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { ProductsComponent } from './products/products.component';
 import { MediaComponent } from './media/media.component';
+import { DonutComponent } from './graphs/donut/donut.component';
+import { LineComponent } from './graphs/line/line.component';
 
 export const routes: Routes = [
   {
@@ -45,5 +47,19 @@ export const routes: Routes = [
   {
     path: 'statistics',
     component: StatisticsComponent,
+    children: [
+      {
+        path: 'charts',
+        component: ChartsComponent
+      },
+      {
+        path: 'donut',
+        component: DonutComponent
+      },
+      {
+        path: 'line',
+        component: LineComponent
+      },
+    ]
   },
 ];

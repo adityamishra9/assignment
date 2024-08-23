@@ -29,77 +29,77 @@ export const navbarData = [
 
 export const expandNavbarData = [
   {
-    routeLink: '/statistics/column',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/Column.svg',
     label: 'Column',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/StackedColumn.svg',
     label: 'Stacked column',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/line',
     icon: '/assets/imgs/Line.svg',
     label: 'Line',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/donut',
     icon: '/assets/imgs/Donut.svg',
     label: 'Donut',
   },
   {
-    routeLink: '/media',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/Bar.svg',
     label: 'Bar',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/StackedBar.svg',
     label: 'Stacked Bar',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/LineColumn.svg',
     label: 'Line Column',
   },
   {
-    routeLink: '/media',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/Area.svg',
     label: 'Area',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/Scatter.svg',
     label: 'Scatter',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/Bubble.svg',
     label: 'Bubbe',
   },
   {
-    routeLink: '/media',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/Waterfall.svg',
     label: 'Waterfall',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/Heatmap.svg',
     label: 'Heatmap',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/Funnel.svg',
     label: 'Funnel',
   },
   {
-    routeLink: '/media',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/Radar.svg',
     label: 'Radar',
   },
   {
-    routeLink: '/products',
+    routeLink: '/statistics/charts',
     icon: '/assets/imgs/GeoMap.svg',
     label: 'Geo map',
   },
