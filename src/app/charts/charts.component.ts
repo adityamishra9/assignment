@@ -10,7 +10,6 @@ Chart.register(...registerables);
   standalone: true,
   imports: [AgCharts],
   templateUrl: './charts.component.html',
-  styleUrl: './charts.component.css',
 })
 export class ChartsComponent {
   public chartOptions: AgChartOptions;

@@ -14,7 +14,6 @@ export class AppModule {}
   standalone: true,
   imports: [RouterOutlet, SidenavComponent, HeaderComponent, RsidenavComponent, ChartsComponent, StatisticsComponent, CardComponent, DonutComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
 
 export class AppComponent {

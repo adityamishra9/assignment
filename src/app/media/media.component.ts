@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './media.component.html',
-  styleUrl: './media.component.css'
 })
 export class MediaComponent {
 

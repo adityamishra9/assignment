@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './sidenav.component.html',
-  styleUrl: './sidenav.component.css',
 })
 export class SidenavComponent {
   collapsed = true;

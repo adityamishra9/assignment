@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './records.component.html',
-  styleUrl: './records.component.css'
 })
 export class RecordsComponent {
 

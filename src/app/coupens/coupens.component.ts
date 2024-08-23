@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './coupens.component.html',
-  styleUrl: './coupens.component.css'
 })
 export class CoupensComponent {
 

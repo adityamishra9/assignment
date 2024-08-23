@@ -27,7 +27,6 @@ import { CardComponent } from '../card/card.component';
     CardComponent,
   ],
   templateUrl: './statistics.component.html',
-  styleUrl: './statistics.component.css',
 })
 export class StatisticsComponent {
   reportOpt = reportOptions;

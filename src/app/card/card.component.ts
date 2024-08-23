@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.css',
 })
 export class CardComponent {
   collapsed = true;

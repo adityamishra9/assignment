@@ -8,7 +8,6 @@ import { expandNavbarData, navbarData } from './nav-data';
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './rsidenav.component.html',
-  styleUrl: './rsidenav.component.css',
 })
 export class RsidenavComponent {
   
