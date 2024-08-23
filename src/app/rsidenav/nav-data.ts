@@ -34,7 +34,7 @@ export const expandNavbarData = [
     label: 'Column',
   },
   {
-    routeLink: '/statistics/charts',
+    routeLink: '/statistics/stacked-column',
     icon: '/assets/imgs/StackedColumn.svg',
     label: 'Stacked column',
   },
@@ -49,7 +49,7 @@ export const expandNavbarData = [
     label: 'Donut',
   },
   {
-    routeLink: '/statistics/charts',
+    routeLink: '/statistics/bar',
     icon: '/assets/imgs/Bar.svg',
     label: 'Bar',
   },
@@ -64,7 +64,7 @@ export const expandNavbarData = [
     label: 'Line Column',
   },
   {
-    routeLink: '/statistics/charts',
+    routeLink: '/statistics/area',
     icon: '/assets/imgs/Area.svg',
     label: 'Area',
   },
@@ -104,3 +104,4 @@ export const expandNavbarData = [
     label: 'Geo map',
   },
 ];
+

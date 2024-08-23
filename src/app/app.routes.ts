@@ -10,6 +10,9 @@ import { ProductsComponent } from './products/products.component';
 import { MediaComponent } from './media/media.component';
 import { DonutComponent } from './graphs/donut/donut.component';
 import { LineComponent } from './graphs/line/line.component';
+import { AreaComponent } from './graphs/area/area.component';
+import { BarComponent } from './graphs/bar/bar.component';
+import { StackedColumnComponent } from './graphs/stacked-column/stacked-column.component';
 
 export const routes: Routes = [
   {
@@ -59,6 +62,18 @@ export const routes: Routes = [
       {
         path: 'line',
         component: LineComponent
+      },
+      {
+        path: 'area',
+        component: AreaComponent
+      },
+      {
+        path: 'bar',
+        component: BarComponent
+      },
+      {
+        path: 'stacked-column',
+        component: StackedColumnComponent
       },
     ]
   },
