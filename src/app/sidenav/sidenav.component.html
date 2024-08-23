@@ -8,15 +8,11 @@
 
     <div class="h-fit lg:px-4 gap-2 text-sm">
       <div
+        [routerLink]="data.routeLink"
         *ngFor="let data of navData"
         class="lg:h-12 lg:w-12 p-2 lg:p-3 justify-center hover:bg-hover-blue rounded-[8px]"
       >
-        <img
-          [routerLink]="data.routeLink"
-          class="cursor-pointer"
-          [src]="data.icon"
-          [alt]="data.label"
-        />
+        <img class="cursor-pointer" [src]="data.icon" [alt]="data.label" />
       </div>
     </div>
   </div>
