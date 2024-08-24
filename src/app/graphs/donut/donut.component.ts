@@ -18,20 +18,29 @@ export class DonutComponent {
   constructor() {
     this.options = {
       data: [
-        { asset: 'Stocks', amount: 60000 },
-        { asset: 'Bonds', amount: 40000 },
-        { asset: 'Cash', amount: 7000 },
-        { asset: 'Real Estate', amount: 5000 },
-        { asset: 'Commodities', amount: 3000 },
+        { month: 'Jan', sales: 500 },
+        { month: 'Feb', sales: 550 },
+        { month: 'Mar', sales: 980 },
+        { month: 'Apr', sales: 470 },
+        { month: 'Ma', sales: 580 },
+        { month: 'June', sales: 430 },
+        { month: 'Jul', sales: 600 },
+        { month: 'Aug', sales: 580 },
+        { month: 'Sep', sales: 620 },
+        { month: 'Oct', sales: 400 },
+        { month: 'Nov', sales: 590 },
+        { month: 'Dec', sales: 888 },
       ],
       title: {
-        text: 'Sales Composition',
+        text: 'Monthly Sales Composition',
+        fontWeight: 'bold',
+        fontSize: 12,
       },
       series: [
         {
           type: 'donut',
-          calloutLabelKey: 'asset',
-          angleKey: 'amount',
+          calloutLabelKey: 'month',
+          angleKey: 'sales',
           innerRadiusRatio: 0.7,
         },
       ],

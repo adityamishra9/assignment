@@ -17,43 +17,46 @@ export class LineComponent {
 
   constructor() {
     this.options = {
-      title: {
-        text: 'Annual Fuel Expenditure',
-      },
       data: [
-        {
-          quarter: 'Q1',
-          petrol: 200,
-          diesel: 100,
-        },
-        {
-          quarter: 'Q2',
-          petrol: 300,
-          diesel: 130,
-        },
-        {
-          quarter: 'Q3',
-          petrol: 350,
-          diesel: 160,
-        },
-        {
-          quarter: 'Q4',
-          petrol: 400,
-          diesel: 200,
-        },
+        { month: 'Jan', sales: 500 },
+        { month: 'Feb', sales: 550 },
+        { month: 'Mar', sales: 980 },
+        { month: 'Apr', sales: 470 },
+        { month: 'Ma', sales: 580 },
+        { month: 'June', sales: 430 },
+        { month: 'Jul', sales: 600 },
+        { month: 'Aug', sales: 580 },
+        { month: 'Sep', sales: 620 },
+        { month: 'Oct', sales: 400 },
+        { month: 'Nov', sales: 590 },
+        { month: 'Dec', sales: 888 },
       ],
       series: [
         {
           type: 'line',
-          xKey: 'quarter',
-          yKey: 'petrol',
-          yName: 'Petrol',
+          xKey: 'month',
+          yKey: 'sales',
+          },
+      ],
+      axes: [
+        {
+          type: 'category',
+          position: 'bottom',
+          title: {
+            text: 'Month of the year',
+            fontWeight: 'bold',
+            fontSize: 12,
+          },
         },
         {
-          type: 'line',
-          xKey: 'quarter',
-          yKey: 'diesel',
-          yName: 'Diesel',
+          type: 'number',
+          position: 'left',
+          title: {
+            text: 'Total Sales',
+            fontWeight: 'bold',
+            fontSize: 12,
+          },
+          interval: { step: 200 },
         },
       ],
     };

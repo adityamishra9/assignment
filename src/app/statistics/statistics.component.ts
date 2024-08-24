@@ -28,10 +28,7 @@ import { CardComponent } from '../card/card.component';
 })
 export class StatisticsComponent {
   reportOpt = reportOptions;
-  close = true;
-  closeFilters() {
-    this.close = !this.close;
-  }
+  
   setTitle: any;
   values1 = ['quantity', 'sales'];
   values2 = [

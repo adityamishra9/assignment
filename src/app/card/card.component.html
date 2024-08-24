@@ -6,11 +6,15 @@
       class="px-2"
       (click)="collapse()"
     />
-    <p class="text-sm" >{{ title }}</p>
+    <p class="text-sm">{{ title }}</p>
   </div>
   <div class="py-3 gap-3 text-sm flex flex-col" *ngIf="collapsed">
-    <div class="mx-5 flex text-xs gap-1" *ngFor="let data of values">
-      <input type="checkbox"  /> {{ data }}
+    <div
+      class="mx-5 flex text-xs gap-1"
+      *ngFor="let data of values"
+      [formGroup]="store"
+    >
+      <input type="checkbox" formControlName="items" (click)="onRun()" class="cursor-pointer"/> {{ data }}
     </div>
   </div>
 </div>

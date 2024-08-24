@@ -21,47 +21,47 @@ export class BarComponent {
   constructor() {
     this.options = {
       data: [
-        {
-          quarter: "Q1'18",
-          iphone: 140,
-          mac: 16,
-          ipad: 14,
-          wearables: 12,
-          services: 20,
-        },
-        {
-          quarter: "Q2'18",
-          iphone: 124,
-          mac: 20,
-          ipad: 14,
-          wearables: 12,
-          services: 30,
-        },
-        {
-          quarter: "Q3'18",
-          iphone: 112,
-          mac: 20,
-          ipad: 18,
-          wearables: 14,
-          services: 36,
-        },
-        {
-          quarter: "Q4'18",
-          iphone: 118,
-          mac: 24,
-          ipad: 14,
-          wearables: 14,
-          services: 36,
-        },
+        { month: 'Jan', sales: 500 },
+        { month: 'Feb', sales: 550 },
+        { month: 'Mar', sales: 980 },
+        { month: 'Apr', sales: 470 },
+        { month: 'Ma', sales: 580 },
+        { month: 'June', sales: 430 },
+        { month: 'Jul', sales: 600 },
+        { month: 'Aug', sales: 580 },
+        { month: 'Sep', sales: 620 },
+        { month: 'Oct', sales: 400 },
+        { month: 'Nov', sales: 590 },
+        { month: 'Dec', sales: 888 },
       ],
       series: [
-        
         {
           type: 'bar',
           direction: 'horizontal',
-          xKey: 'quarter',
-          yKey: 'mac',
-          yName: 'Mac',
+          xKey: 'month',
+          yKey: 'sales',
+          fill: '#0F49A0',
+        },
+      ],
+      axes: [
+        {
+          type: 'category',
+          position: 'left',
+          title: {
+            text: 'Month of the year',
+            fontWeight: 'bold',
+            fontSize: 12,
+          },
+        },
+        {
+          type: 'number',
+          position: 'bottom',
+          title: {
+            text: 'Total Sales',
+            fontWeight: 'bold',
+            fontSize: 12,
+          },
+          interval: { step: 200 },
         },
       ],
     };

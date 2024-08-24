@@ -13,7 +13,7 @@ import { AgChartOptions } from 'ag-charts-community';
   </ag-charts> `,
 })
 export class AreaComponent {
-  public options:AgChartOptions;
+  public options: AgChartOptions;
 
   constructor() {
     this.options = {
@@ -21,37 +21,46 @@ export class AreaComponent {
         text: 'Sales by Month',
       },
       data: [
-        { month: 'Jan', subscriptions: 222, services: 250, products: 200 },
-        { month: 'Feb', subscriptions: 240, services: 255, products: 210 },
-        { month: 'Mar', subscriptions: 280, services: 245, products: 195 },
-        { month: 'Apr', subscriptions: 300, services: 260, products: 205 },
-        { month: 'May', subscriptions: 350, services: 235, products: 215 },
-        { month: 'Jun', subscriptions: 420, services: 270, products: 200 },
-        { month: 'Jul', subscriptions: 300, services: 255, products: 225 },
-        { month: 'Aug', subscriptions: 270, services: 305, products: 210 },
-        { month: 'Sep', subscriptions: 260, services: 280, products: 250 },
-        { month: 'Oct', subscriptions: 385, services: 250, products: 205 },
-        { month: 'Nov', subscriptions: 320, services: 265, products: 215 },
-        { month: 'Dec', subscriptions: 330, services: 255, products: 220 },
+        { month: 'Jan', sales: 500 },
+        { month: 'Feb', sales: 550 },
+        { month: 'Mar', sales: 980 },
+        { month: 'Apr', sales: 470 },
+        { month: 'Ma', sales: 580 },
+        { month: 'June', sales: 430 },
+        { month: 'Jul', sales: 600 },
+        { month: 'Aug', sales: 580 },
+        { month: 'Sep', sales: 620 },
+        { month: 'Oct', sales: 400 },
+        { month: 'Nov', sales: 590 },
+        { month: 'Dec', sales: 888 },
       ],
       series: [
         {
           type: 'area',
           xKey: 'month',
-          yKey: 'subscriptions',
-          yName: 'Subscriptions',
+          yKey: 'sales',
+          fill: '#0F49A0',
+        },
+      ],
+      axes: [
+        {
+          type: 'category',
+          position: 'bottom',
+          title: {
+            text: 'Month of the year',
+            fontWeight: 'bold',
+            fontSize: 12,
+          },
         },
         {
-          type: 'area',
-          xKey: 'month',
-          yKey: 'services',
-          yName: 'Services',
-        },
-        {
-          type: 'area',
-          xKey: 'month',
-          yKey: 'products',
-          yName: 'Products',
+          type: 'number',
+          position: 'left',
+          title: {
+            text: 'Total Sales',
+            fontWeight: 'bold',
+            fontSize: 12,
+          },
+          interval: { step: 200 },
         },
       ],
     };
