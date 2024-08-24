@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ChartsComponent } from '../charts/charts.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {
@@ -16,7 +15,6 @@ import { CardComponent } from '../card/card.component';
   selector: 'app-statistics',
   standalone: true,
   imports: [
-    ChartsComponent,
     RouterModule,
     CommonModule,
     MatExpansionPanel,

@@ -29,7 +29,7 @@ export const navbarData = [
 
 export const expandNavbarData = [
   {
-    routeLink: '/statistics/charts',
+    routeLink: '/statistics/column',
     icon: '/assets/imgs/Column.svg',
     label: 'Column',
   },

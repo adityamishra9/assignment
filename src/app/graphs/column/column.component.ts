@@ -9,9 +9,13 @@ Chart.register(...registerables);
   selector: 'app-charts',
   standalone: true,
   imports: [AgCharts],
-  templateUrl: './charts.component.html',
+  template: `<ag-charts
+    [options]="chartOptions"
+    class="flex w-[500px] lg:w-[700px] xl:w-[950px] h-[400px] lg:h-[550px] xl:h-[650px] mt-20 lg:mt-10 xl:ml-10 2xl:ml-20"
+  >
+  </ag-charts> `,
 })
-export class ChartsComponent {
+export class ColumnComponent {
   public chartOptions: AgChartOptions;
   constructor() {
     this.chartOptions = {
@@ -34,6 +38,7 @@ export class ChartsComponent {
           type: 'bar',
           xKey: 'month',
           yKey: 'sales',
+          fill: '#0F49A0',
         },
       ],
       axes: [
@@ -42,6 +47,8 @@ export class ChartsComponent {
           position: 'bottom',
           title: {
             text: 'Month of the year',
+            fontWeight: 'bold',
+            fontSize: 12,
           },
         },
         {
@@ -49,6 +56,8 @@ export class ChartsComponent {
           position: 'left',
           title: {
             text: 'Total Sales',
+            fontWeight: 'bold',
+            fontSize: 12,
           },
           interval: { step: 200 },
         },

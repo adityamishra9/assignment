@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { ChartsComponent } from './charts/charts.component';
 import { CardComponent } from './card/card.component';
 import { CoupensComponent } from './coupens/coupens.component';
 import { HomeComponent } from './home/home.component';
@@ -13,15 +12,12 @@ import { LineComponent } from './graphs/line/line.component';
 import { AreaComponent } from './graphs/area/area.component';
 import { BarComponent } from './graphs/bar/bar.component';
 import { StackedColumnComponent } from './graphs/stacked-column/stacked-column.component';
+import { ColumnComponent } from './graphs/column/column.component';
 
 export const routes: Routes = [
   {
     path: 'card',
     component: CardComponent,
-  },
-  {
-    path: 'charts',
-    component: ChartsComponent,
   },
   {
     path: 'coupens',
@@ -52,8 +48,8 @@ export const routes: Routes = [
     component: StatisticsComponent,
     children: [
       {
-        path: 'charts',
-        component: ChartsComponent
+        path: 'column',
+        component: ColumnComponent
       },
       {
         path: 'donut',
